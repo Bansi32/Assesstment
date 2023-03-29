@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <app-header>
+        <ng-content></ng-content>
+    </app-header>
+    <li [routerLinkActive]="'active'" [routerLinkActiveOptions]='{exact: true}'><a mat-button  [routerLink]="['']">Home</a></li>
+    <li [routerLinkActive]="'active'"> <a mat-button [routerLinkActive]="'active'">About</a></li>
+    <li [routerLinkActive]="'active'" [routerLinkActiveOptions]='{exact: true}' *ngIf="loggedInUser" [routerLink]="['/questions']"><a mat-button>Questions</a></li>
+    
+    <div class="spacer"></div>
+    
+    <a mat-raised-button *ngIf="!loggedInUser" class="m-2" [routerLink]="['/login']">Login</a>
+    <a mat-raised-button *ngIf="!loggedInUser" [routerLink]="['/signup']">SignUp</a>
+    <a mat-raised-button *ngIf="loggedInUser" (click)="logout()">Logout</a>
+
+</mat-toolbar>

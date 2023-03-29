@@ -1,0 +1,77 @@
+{
+  "question": [
+    {
+      "q1": "What is Html?",
+      "q2": "What is CSS?",
+      "q3": "What is TypeScript?",
+      "q4": "What is Angular?",
+      "q5": "What is Java?",
+      "exam": "cae",
+      "id": 1
+    },
+    {
+      "q1": "What is Node.js?",
+      "q2": "What is React.js?",
+      "q3": "What is Bootstrap?",
+      "q4": "What is SpringBoot?",
+      "q5": "What is Spring?",
+      "exam": "ese",
+      "id": 2
+    },
+    {
+      "q1": "Explain the concept of DBMS?",
+      "q2": "Explain the concept of FCL?",
+      "q3": "Explain types of search algorithms?",
+      "q4": "Explain the concept of RDBMS?",
+      "q5": "Explain the concept of database?",
+      "exam": "cae",
+      "id": 3
+    },
+    {
+      "q1": "What is JavaFx explain in detail?",
+      "q2": "Explain in detail the concept of RestApi?",
+      "q3": "Difference between Rest and RestFull api?",
+      "q4": "What is SpringBoot explain in detail?",
+      "q5": "What is CallBack Function explain in detail?",
+      "exam": "ese",
+      "id": 4
+    }
+  ],
+  "signupUsers": [
+    {
+      "name": "Bansi",
+      "email": "bansi@gmail.com",
+      "password": "12345678",
+      "role": true,
+      "id": 1
+    },
+    {
+      "name": "Vraj",
+      "email": "vraj@gmail.com",
+      "password": "12345678",
+      "role": false,
+      "id": 2
+    },
+    {
+      "name": "Kush",
+      "email": "kush@gmail.com",
+      "password": "kushpatel",
+      "role": false,
+      "id": 3
+    },
+    {
+      "name": "Kush Patel",
+      "email": "kush@gmail.com",
+      "password": "kushpatel123",
+      "role": false,
+      "id": 4
+    },
+    {
+      "name": "Chintu",
+      "email": "chintu@gmail.com",
+      "password": "12345678",
+      "role": false,
+      "id": 5
+    }
+  ]
+}

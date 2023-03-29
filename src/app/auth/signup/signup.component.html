@@ -1,0 +1,32 @@
+<!-- signup page start-->
+<div class="container d-flex justify-content-center">
+    <div class="text-center main_form">
+    <h2>Registration Form</h2>
+        <form [formGroup]="reactiveForm" class="my-form" (ngSubmit)="onSubmit()"> 
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="ex.Basni" formControlName="userName">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput  placeholder="abc@gmail.com" formControlName="emailId" >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" formControlName="password">
+            </mat-form-field>   
+            <div style="cursor:unset">
+                <mat-checkbox color="primary" formControlName="role" [disabled]>
+                    Admin
+               </mat-checkbox>
+            </div>
+            
+            
+            <div>
+                <input type="submit" class="btn btn-success m-1" value="Submit">
+            </div> 
+        </form>
+        <button mat-raised-button color="primary" [routerLink]="['']">Back</button> 
+</div>
+</div>
+<!-- signup page end-->

@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<!-- ese component starts -->
+<div class="container">
+    <h2 class="text-center">ESE QUESTION PAPERS</h2>
+    <div class="card m-3 d-flex" style="width: 18rem; height:17rem; float:left;" *ngFor="let q of ese; let i=index">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item l1">Paper id: {{i+1}}</li>
+            <li class="list-group-item">{{q.q1}}</li>
+            <li class="list-group-item">{{q.q2}}</li>
+            <li class="list-group-item">{{q.q3}}</li>
+            <li class="list-group-item">{{q.q4}}</li>
+            <li class="list-group-item">{{q.q5}}</li>
+        </ul>
+    </div>
+</div>
+<!-- ese component ends -->
+<app-footer></app-footer>

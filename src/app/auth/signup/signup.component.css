@@ -1,0 +1,11 @@
+.main_form{
+    width:400px;
+  height:420px;
+  float:left;
+  border:1px solid #ebebeb;
+  background-color: rgb(152, 231, 245);
+  background-size:cover;
+  background-position:center;
+  border-radius: 1rem;
+
+}

@@ -1,0 +1,43 @@
+<!-- form component starts -->
+<div class="container d-flex justify-content-center">
+    <div class="text-center main_form">
+        <h2>New Question Bank</h2>
+        <form [formGroup]="reactiveForm" class="my-form" (ngSubmit)="onSubmit()">
+            <div>
+                <mat-form-field class="col text-center">
+                    <mat-label>Question 1</mat-label>
+                    <input matInput formControlName="q1">
+                </mat-form-field>
+            </div>
+            <mat-form-field class="p-2">
+                <mat-label>Question 2</mat-label>
+                <input matInput formControlName="q2">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Question 3</mat-label>
+                <input matInput formControlName="q3">
+            </mat-form-field>
+            <mat-form-field class="p-2">
+                <mat-label>Question 4</mat-label>
+                <input matInput formControlName="q4">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Question 5</mat-label>
+                <input matInput formControlName="q5">
+            </mat-form-field>
+            <div>
+                <label for="exam" class="p-1">Exam:</label>
+                <input type="radio" id="cae" value="cae" formControlName="exam">
+                <label for="cae" class="p-1">CAE</label>
+                <input type="radio" id="ese" value="ese" formControlName="exam">
+                <label for="ese" class="p-1">ESE</label>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success m-1" value="Submit">
+            </div>
+        </form>
+        <button mat-raised-button color="primary" (click)="backClicked()">Back</button>
+    </div>
+</div>
+<!-- form component ends -->
+<app-footer></app-footer>

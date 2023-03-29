@@ -1,0 +1,22 @@
+<!-- LogIn Form Starts-->
+
+<div class="container d-flex justify-content-center">
+    <div class="text-center main_form">
+    <h2>Login Form</h2>
+        <form [formGroup]="reactiveForm" class="my-form" (ngSubmit)="onSubmit()"> 
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type=email placeholder="abc@gmail.com" formControlName="emailId" >
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" formControlName="password">
+            </mat-form-field>    
+            <div>
+                <input type="submit" class="btn btn-success m-1" value="LogIn">
+            </div>   
+        </form>
+        <button mat-raised-button color="primary" [routerLink]="['']">Back</button> 
+</div>
+</div>
+<!-- LogIn Form Ends-->
